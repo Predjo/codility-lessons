@@ -16,7 +16,7 @@ export function solution(S, P, Q) {
   }
 
   for (let i = 0; i < M; i++) {
-    const p = P[i] === 0 ? initialCount : impactA[P[i] - 1];
+    const p = impactA[P[i] - 1] || initialCount;
     const q = impactA[Q[i]];
 
     for (let c of impactOrder) {
