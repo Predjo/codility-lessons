@@ -8,7 +8,7 @@ export function solution(S, P, Q) {
 
   const initialCount = { A: 0, C: 0, G: 0, T: 0 };
 
-  const minA = Array(M).fill(impactOrder.T);
+  const minA = Array(M).fill(impactValue.T);
 
   for (let i = 0; i < N; i++) {
     let previous = impactA[i - 1] || initialCount;
